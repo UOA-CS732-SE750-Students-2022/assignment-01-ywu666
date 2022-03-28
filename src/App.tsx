@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {IonApp, IonCol, IonContent, IonGrid, IonPage, setupIonicReact} from "@ionic/react";
+import { Header } from "./ components/Header";
+import { Post } from "./ components/Post";
+import './index.css';
+
+// Required to get the app working!!!
+setupIonicReact()
 
 function App() {
+    const introM = "Founded in 1829 on an isthmus between Lake Monona " +
+        "and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IonApp className="App">
+        <IonPage>
+            <IonContent fullscreen>
+                <Header/>
+                <IonGrid>
+                    <IonCol>
+                        <Post imgUrl="./mock.jpg"
+                              title="Madison, WI"
+                              introduction={ introM } />
+                    </IonCol>
+                    <IonCol>
+                        <Post imgUrl="./mock.jpg"
+                              title="Madison, WI"
+                              introduction={ introM } />
+                    </IonCol>
+                </IonGrid>
+            </IonContent>
+        </IonPage>
+    </IonApp>
   );
-}
+};
 
 export default App;
