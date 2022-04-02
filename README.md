@@ -12,7 +12,12 @@ The project is about the softeng750 A1, providing a sample tech-demo to help you
  
  ## To Run
 In the project directory, you can run:
-`npm start` 
+- if you havn't run npm install in this repo before, you need to run it one time. After running one time, you donnot need to run again. 
+
+```
+npm install 
+npm start
+```
 
 Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.\
 The page will reload if you make edits. You will also see any lint errors in the console.
