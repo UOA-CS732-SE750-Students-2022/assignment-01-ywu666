@@ -12,7 +12,10 @@ code {
     monospace;
 }
 
-
+/*
+ * Ionic theme color
+ * ______________________
+ */
 :root {
   --ion-color-primary: #69bb7b;
   --ion-color-primary-rgb: 105,187,123;
@@ -30,7 +33,7 @@ code {
 }
 
 /*
- * Dark Colors
+ * Dark Mode Colors
  * ------------------
  */
 body.dark {

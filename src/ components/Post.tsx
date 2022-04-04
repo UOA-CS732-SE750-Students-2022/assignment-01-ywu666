@@ -1,4 +1,10 @@
-import { IonCardTitle, IonCardContent, IonCard, IonCardHeader, IonCardSubtitle} from "@ionic/react"
+import {
+    IonCardTitle,
+    IonCardContent,
+    IonCard,
+    IonCardHeader,
+    IonCardSubtitle
+} from "@ionic/react"
 import React from 'react';
 import "./Header.css"
 
@@ -22,17 +28,22 @@ export const Post: React.FC<PostProps>  = (props: PostProps) => {
 
     return (
         <>
-        <IonCard style={ postStyle } className="postCard">
-            <img style={{height: '100%', width: '100%', objectFit: 'contain'}}  src={ imgUrl }/>
+        <IonCard mode='ios'
+                 style={ postStyle }
+                 className="postCard">
+            <img style={{
+                    height: '100%',
+                    width: '100%',
+                    objectFit: 'contain',
+                }}
+                 src={ imgUrl }/>
                 <IonCardHeader>
-                    <IonCardSubtitle>
-                        Destination
-                    </IonCardSubtitle>
+                    <IonCardSubtitle>Destination</IonCardSubtitle>
                     <IonCardTitle>
                         { title }
                     </IonCardTitle>
                 </IonCardHeader>
-                <IonCardContent className="ios card-content-ios hydrated">
+                <IonCardContent>
                     { introduction }
                 </IonCardContent>
         </IonCard>

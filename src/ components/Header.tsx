@@ -2,29 +2,26 @@ import {
     IonHeader,
     IonTitle,
     IonToolbar,
-    IonIcon,
     IonToggle,
-    IonLabel, IonItem, IonButtons
+    IonLabel,
+    IonButtons
 } from "@ionic/react"
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import "./Header.css"
 
 export const Header: React.FC = () => {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    console.log(prefersDark);
-
     return (
         <IonHeader translucent>
-            <IonToolbar color="primary" className='dark'>
+            <IonToolbar
+                color="primary"
+                className='dark'>
                 <IonButtons slot='primary'>
                     <IonLabel>Dark Mode</IonLabel>
                     <IonToggle
                         id="themeToggle"
                         color='light'
-                        onIonChange={ (e) => {
-                            console.log(e.detail.checked);
+                        onIonChange={ () => {
                             document.body.classList.toggle('dark');
-                            console.log(document.body.classList);
                         }}/>
                 </IonButtons>
                 <IonTitle>Ionic Demo</IonTitle>

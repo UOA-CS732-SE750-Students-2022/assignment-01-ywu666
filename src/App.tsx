@@ -6,7 +6,7 @@ import { Post } from "./ components/Post";
 import './index.css';
 
 // Required to get the app working!!!
-setupIonicReact()
+setupIonicReact();
 
 function App() {
     const introM = "Founded in 1829 on an isthmus between Lake Monona " +
