@@ -4,7 +4,6 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 The project is about the softeng750 A1, providing a sample tech-demo to help you understand how [Ionic Framework](https://ionicframework.com/) is used in React. 
 
 Here is a short video that introduce set up Inoic in React step by step.\
-PS: This is the same video that I submitted via Canvas. I donnot why the quality of the video in canvas will become low. If you think the words are hard to recognise via Canvas, you can use this link.\
 **Tutorial Link**: https://youtu.be/aSJKfDpF1C8
 
 ## Before Run
